@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+threadpool:
+  property:
+    corePoolSize: 6
+    maxPoolSize: 12
+    keepAliveSeconds: 10
+    queueCapacity: 1000
+    awaitTerminationSeconds: 0
+    threadNamePrefix: pool_
+    waitForTasksToCompleteOnShutdown: true
