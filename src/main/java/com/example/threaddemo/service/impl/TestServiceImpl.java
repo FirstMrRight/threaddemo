@@ -22,10 +22,12 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public void business() {
-        //其他业务逻辑
+
         List<Integer> businessList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             log.info("开始异步");
+
+            //其他业务逻辑
             asyncService.processingTimeOperation();
             businessList.add(i);
             log.info("执行异步完毕");

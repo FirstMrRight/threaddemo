@@ -26,7 +26,6 @@ public class TestController {
         /**
          * 请注意,异步注解一定要使用在主线程的业务Service中
          * 这样才能等主线程任务开始后，子线程才会进入任务队列
-         *
          */
         testService.business();
         log.info("主线程执行完毕");
